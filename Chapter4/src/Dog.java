@@ -2,9 +2,9 @@
  * Created by Comp on 07.04.2017.
  */
 public class Dog {
-    int size;
-    String name;
+    private int size;
 
+    String name;
     void bark(){
         if(size>60){
             System.out.println("Huf-Huf");
@@ -16,5 +16,13 @@ public class Dog {
         else{
             System.out.println("Wif-Wif");
         }
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
     }
 }
