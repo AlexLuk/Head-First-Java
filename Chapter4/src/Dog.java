@@ -18,6 +18,13 @@ public class Dog {
         }
     }
 
+    void bark(int numOfBarks){
+        while(numOfBarks>0){
+            bark();
+            numOfBarks=numOfBarks-1;
+        }
+    }
+
     public int getSize() {
         return size;
     }
