@@ -16,7 +16,7 @@ public class DogTestDrive {
 
         one.bark();
         two.bark();
-        three.bark();
+        three.bark(3);
         five.setSize(one.getSize());
 
         if(one.equals(five)){
