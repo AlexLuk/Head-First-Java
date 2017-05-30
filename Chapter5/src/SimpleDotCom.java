@@ -10,13 +10,15 @@ public class SimpleDotCom {
 
         String result = "мимо";
 
-        for (int cell : locationsCells){
-            if (guess==cell){
+        for (int i = 0; i < locationsCells.length; i++) {
+            if (guess==locationsCells[i]){
                 result="попал";
+                locationsCells[i]=0;
                 numOfHits++;
                 break;
             }
         }
+
 
         if(numOfHits==locationsCells.length){
             result = "потопил";
