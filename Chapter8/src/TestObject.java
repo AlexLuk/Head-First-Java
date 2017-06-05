@@ -13,8 +13,9 @@ public class TestObject {
         ArrayList<Object> myObList = new ArrayList<Object>();
         myObList.add("HellO!");
         if (myObList.get(0).getClass()==java.lang.String.class) {
-            String st = String.valueOf(myObList.get(0));
+            String st = (String)  myObList.get(0);
             System.out.println(st);
         }
+        System.out.println(myObList.get(0) instanceof String ? myObList.get(0) : "");
     }
 }
