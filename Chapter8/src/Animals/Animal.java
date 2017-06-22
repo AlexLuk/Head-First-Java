@@ -3,7 +3,7 @@ package Animals;
 /**
  * Created by Comp on 02.06.2017.
  */
-public class Animal {
+public abstract class Animal {
     public String picture;
     public String food;
     public int hunger;
